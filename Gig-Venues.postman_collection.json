@@ -1,0 +1,82 @@
+{
+  "info": {
+    "_postman_id": "55ae5c51-f2ff-4692-bf6f-aa6ef75fced5",
+    "name": "Gig-Venues",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "23879530"
+  },
+  "item": [
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\": \"\",\n    \"password\": \"\",\n    \"email\": \"\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{gigVenuesApi}}/user/register",
+          "host": ["{{gigVenuesApi}}"],
+          "path": ["user", "register"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "New Request",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"username\": \"\",\n    \"password\": \"\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{gigVenuesApi}}/user/login",
+          "host": ["{{gigVenuesApi}}"],
+          "path": ["user", "login"]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [""]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "localhost",
+      "value": "http://localhost:4008",
+      "type": "string"
+    },
+    {
+      "key": "gigVenuesApi",
+      "value": "https://berto-forteza-back-final-project-202209.onrender.com",
+      "type": "string"
+    }
+  ]
+}
